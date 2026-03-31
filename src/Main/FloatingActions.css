@@ -1,0 +1,177 @@
+/* ========================= */
+/* ROOT CONTAINER */
+/* ========================= */
+.fa-container {
+  position: fixed !important;
+  bottom: 25px !important;
+  right: 25px !important;
+  z-index: 9999 !important;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+/* ========================= */
+/* BUTTON */
+/* ========================= */
+.fa-btn {
+  all: unset; /* 🔥 resets inherited styles */
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 16px;
+  border-radius: 30px;
+  cursor: pointer;
+
+  font-size: 14px;
+  color: #fff;
+
+  background: rgba(20, 20, 20, 0.95);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255,255,255,0.08);
+
+  transition: all 0.3s ease;
+}
+
+.fa-btn:hover {
+  transform: translateX(-6px) scale(1.05);
+}
+
+/* VARIANTS */
+.fa-book {
+  background: linear-gradient(135deg, #2b2b2b, #111);
+}
+
+.fa-ai {
+  background: linear-gradient(135deg, #3a3a3a, #000);
+}
+
+/* ========================= */
+/* PANEL */
+/* ========================= */
+.fa-panel {
+  position: fixed !important;
+  bottom: 100px !important;
+  right: 25px !important;
+
+  width: 320px;
+  height: 420px;
+
+  background: rgba(15, 15, 15, 0.97);
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  border: 1px solid rgba(255,255,255,0.06);
+
+  transform: translateY(30px) scale(0.95);
+  opacity: 0;
+  pointer-events: none;
+
+  transition: all 0.3s ease;
+  z-index: 10000 !important;
+}
+
+.fa-open {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ========================= */
+/* HEADER */
+/* ========================= */
+.fa-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px;
+  font-size: 14px;
+  color: #eee;
+
+  background: rgba(255,255,255,0.03);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.fa-header button {
+  all: unset;
+  cursor: pointer;
+  color: #aaa;
+}
+
+/* ========================= */
+/* BODY */
+/* ========================= */
+.fa-body {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+}
+
+.fa-msg {
+  max-width: 80%;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.fa-bot {
+  background: rgba(255,255,255,0.06);
+  color: #ddd;
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+.fa-footer {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.fa-footer input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+
+  background: rgba(255,255,255,0.05);
+  color: white;
+  outline: none;
+}
+
+.fa-footer button {
+  all: unset;
+  padding: 10px;
+  border-radius: 50%;
+  background: #222;
+  cursor: pointer;
+  color: white;
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+@media (max-width: 600px) {
+  .fa-panel {
+    width: 95% !important;
+    right: 2.5% !important;
+  }
+
+  .fa-btn span {
+    display: none;
+  }
+}

@@ -1,0 +1,115 @@
+/* Navbar background */
+.custom-navbar {
+  background: linear-gradient(135deg, #1abeb6, #111827);
+  padding: 12px 0;
+  backdrop-filter: blur(10px);
+}
+
+/* Brand */
+.brand-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f9fafb !important;
+  display: flex;
+  align-items: center;
+}
+
+/* Nav links */
+.nav-link {
+  color: #d1d5db !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Hover underline animation */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #38bdf8;
+  left: 0;
+  bottom: -4px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Premium Login Button */
+.navbar .login-btn {
+  position: relative;
+  padding: 8px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #111827, #1f2937);
+  border: 1px solid rgba(255,255,255,0.1);
+  overflow: hidden;
+  transition: all 0.35s ease;
+  letter-spacing: 0.5px;
+  z-index: 1;
+
+  /* 🔥 FIX */
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+/* Remove underline in ALL states */
+.navbar .login-btn:hover,
+.navbar .login-btn:focus,
+.navbar .login-btn:active {
+  text-decoration: none !important;
+  color: #ffffff !important;
+}
+.navbar .login-btn::after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 120%;
+  background: rgba(255, 255, 255, 0.25);
+  top: -10%;
+  left: -60%;
+  transform: skewX(-20deg);
+  transition: 0.5s;
+}
+.navbar .login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255,255,255,0.15);
+}
+
+.navbar .login-btn:hover::after {
+  left: 120%;
+}
+
+/* Click effect */
+.login-btn:active {
+  transform: scale(0.96);
+}
+
+/* Mobile tweaks */
+@media (max-width: 991px) {
+  .nav-link {
+    padding: 10px 0;
+  }
+
+  .login-btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+/* Brand image (favicon) */
+.brand-img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  margin-right: 8px;
+}

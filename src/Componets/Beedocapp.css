@@ -1,0 +1,91 @@
+.app-section {
+  width: 100%;
+  padding: 80px 10%;
+  background: linear-gradient(135deg, #f5f9ff, #e8f0ff);
+}
+
+.app-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.app-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.app-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.app-title span {
+  color: #4a6cf7;
+}
+
+.app-subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.app-features p {
+  margin: 8px 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.app-buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+.store-btn {
+  width: 150px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.store-btn:hover {
+  transform: scale(1.05);
+}
+
+.app-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.app-image img {
+  width: 500px;        /* increased width */
+  height: auto;        /* keeps aspect ratio */
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease;
+}
+.app-image img:hover {
+  transform: translateY(-10px);
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .app-title {
+    font-size: 32px;
+  }
+
+  .app-buttons {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,90 @@
+.counter-section {
+  position: relative;
+  padding: 60px 8%;
+}
+
+/* overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* content */
+.counter-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+/* heading */
+.counter-content h2{
+    margin: 0;
+    font-size: 32px;
+    font-weight: 600;
+    /* latter-spacing:0.5; */
+    background: linear-gradient(90deg);
+    /* -webkit-background-clip:text ; */
+    /* -webkit-text-fill-color: transparent; */
+}
+
+/* subtitle */
+.counter-content p {
+  margin: 6px 0 20px;
+  font-size: 14px;
+  color: #dbeafe;
+}
+
+/* grid */
+.counter-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* card */
+.counter-card {
+  padding: 22px 12px;
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(6px);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: 0.3s;
+}
+
+.counter-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* number */
+.counter-card h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #00d4ff;
+  margin-bottom: 6px;
+}
+
+/* 🔥 UPDATED LABEL (bigger + better) */
+.counter-card p {
+  font-size: 16px;   /* 👈 increased from 13px */
+  font-weight: 500;
+  color: #e0f2fe;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .counter-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .counter-container {
+    grid-template-columns: 1fr;
+  }
+}

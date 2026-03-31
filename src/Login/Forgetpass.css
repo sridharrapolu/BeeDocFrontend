@@ -1,0 +1,144 @@
+/* Reset */
+body {
+  margin: 0;
+}
+
+/* Background with pattern + depth */
+.fp-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", sans-serif;
+  position: relative;
+  overflow: hidden;
+
+  background: #f4f8fb;
+
+  /* subtle grid pattern */
+  background-image: radial-gradient(#dbeafe 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+/* Floating soft shapes */
+.fp-container::before {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: #d9ecff;
+  border-radius: 50%;
+  top: -120px;
+  left: -120px;
+  opacity: 0.6;
+}
+
+.fp-container::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: #eaf4ff;
+  border-radius: 50%;
+  bottom: -80px;
+  right: -80px;
+  opacity: 0.7;
+}
+
+/* Glass card */
+.fp-card {
+  width: 370px;
+  padding: 35px;
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  z-index: 1;
+}
+
+/* Title */
+.fp-title {
+  color: #2a7fba;
+  margin-bottom: 5px;
+}
+
+/* Subtitle */
+.fp-subtitle {
+  font-size: 14px;
+  color: #6c7a89;
+  margin-bottom: 25px;
+}
+
+/* Form */
+.fp-form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* Input group */
+.fp-group {
+  margin-bottom: 18px;
+}
+
+.fp-group label {
+  font-size: 13px;
+  margin-bottom: 5px;
+  display: block;
+  color: #555;
+}
+
+.fp-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #dbe3ec;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+  background: #fff;
+}
+
+.fp-group input:focus {
+  border-color: #2a7fba;
+  box-shadow: 0 0 0 3px rgba(42, 127, 186, 0.1);
+}
+
+/* Button */
+.fp-btn {
+  padding: 12px;
+  background: #2a7fba;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.fp-btn:hover {
+  background: #256ea3;
+  transform: translateY(-1px);
+}
+
+/* Message */
+.fp-message {
+  margin-top: 15px;
+  font-size: 14px;
+  color: green;
+}
+
+/* Back */
+.fp-back {
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.fp-back a {
+  text-decoration: none;
+  color: #2a7fba;
+  font-weight: 500;
+}

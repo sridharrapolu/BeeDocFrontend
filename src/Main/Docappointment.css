@@ -1,0 +1,128 @@
+/* ===== ROOT WRAPPER ===== */
+.docapp-bg {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,123,255,0.2), rgba(255,255,255,0.9)),
+              url("../assets/appointmentbg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ===== CARD ===== */
+.docapp-card {
+  width: 100%;
+  max-width: 650px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* ===== TITLE ===== */
+.docapp-title {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+.docapp-title i {
+  color: #3498db;
+  margin-right: 8px;
+}
+
+/* ===== WARNING ===== */
+.docapp-warning {
+  text-align: center;
+  color: #e67e22;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* ===== GRID ===== */
+.docapp-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+/* ===== INPUT GROUP ===== */
+.docapp-input-group {
+  position: relative;
+}
+
+/* ICON */
+.docapp-input-group i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #3498db;
+}
+
+/* ===== FORCE INPUT STYLE (PREVENT GLOBAL OVERRIDE) ===== */
+.docapp-form-grid input,
+.docapp-form-grid textarea {
+  width: 100% !important;
+  padding: 12px !important;
+  border-radius: 8px !important;
+  border: 1px solid #dcdcdc !important;
+  font-size: 14px !important;
+  outline: none !important;
+}
+
+/* LEFT SPACE FOR ICON */
+.docapp-input-group input,
+.docapp-input-group textarea {
+  padding-left: 35px !important;
+}
+
+/* FOCUS */
+.docapp-form-grid input:focus,
+.docapp-form-grid textarea:focus {
+  border-color: #3498db !important;
+}
+
+/* ===== DISABLED ===== */
+.docapp-readonly {
+  background: #f1f3f5 !important;
+  font-weight: 500;
+}
+
+/* ===== TEXTAREA ===== */
+.docapp-form-grid textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+/* ===== FULL WIDTH ===== */
+.docapp-full {
+  grid-column: span 2;
+}
+
+/* ===== BUTTON ===== */
+.docapp-submit-btn {
+  grid-column: span 2;
+  padding: 14px !important;
+  border: none !important;
+  border-radius: 25px !important;
+  background: linear-gradient(135deg, #3498db, #2ecc71) !important;
+  color: white !important;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* HOVER */
+.docapp-submit-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* ===== NO DOC ===== */
+.docapp-no-doc {
+  text-align: center;
+  margin-top: 50px;
+}

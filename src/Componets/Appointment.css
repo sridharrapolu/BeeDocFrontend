@@ -1,0 +1,55 @@
+/* Container */
+.appointment-container {
+  margin-top: 50px;
+}
+/* Card */
+.appointment-card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.appointment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+/* Left Section */
+.appointment-info {
+  background: linear-gradient(135deg, #0d6efd, #3074da);
+}
+.appointment-info h2 {
+  letter-spacing: 1px;
+}
+.appointment-info ul li {
+  margin-bottom: 10px;
+}
+
+/* Form */
+.appointment-form .form-control {
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.appointment-form .form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 8px rgba(13, 110, 253, 0.3);
+}
+
+/* Button */
+.appointment-btn {
+  border-radius: 10px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.appointment-btn:hover {
+  transform: scale(1.03);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .appointment-info {
+    text-align: center;
+  }
+}

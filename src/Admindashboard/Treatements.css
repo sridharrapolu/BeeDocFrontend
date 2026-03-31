@@ -1,0 +1,139 @@
+/* =========================
+   TREATMENTS (SCOPED)
+   ========================= */
+
+.trt-container {
+  padding: 20px;
+  background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Header */
+.trt-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.trt-title {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+/* =========================
+   🔥 FIXED ADD BUTTON
+   ========================= */
+.trt-container .trt-add-btn {
+  width: auto !important;
+  min-width: unset !important;
+  max-width: fit-content !important;
+
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+
+  padding: 6px 16px !important;
+  border-radius: 20px !important;
+  border: none !important;
+
+  background: linear-gradient(135deg, #22c55e, #16a34a) !important;
+  color: white !important;
+
+  font-weight: 500;
+  font-size: 14px;
+
+  cursor: pointer;
+  white-space: nowrap;
+
+  flex: none !important;
+}
+
+/* =========================
+   GRID
+   ========================= */
+.trt-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Card */
+.trt-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Image */
+.trt-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Actions */
+.trt-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* =========================
+   BUTTONS FIX (GLOBAL OVERRIDE SAFE)
+   ========================= */
+.trt-container .trt-btn {
+  width: auto !important;
+  min-width: 85px !important;
+  height: 34px !important;
+
+  border-radius: 4px !important;
+  border: 1px solid #d1d5db !important;
+
+  background: white !important;
+  color: #374151 !important;
+
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Hover */
+.trt-edit:hover {
+  background: #2563eb !important;
+  color: white !important;
+}
+
+.trt-delete:hover {
+  background: #dc2626 !important;
+  color: white !important;
+}
+
+.trt-sub:hover {
+  background: #059669 !important;
+  color: white !important;
+}
+
+/* Click */
+.trt-btn:active {
+  transform: scale(0.96);
+}
+
+/* Preview */
+.trt-preview {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  margin-top: 10px;
+  border-radius: 8px;
+}

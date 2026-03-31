@@ -1,0 +1,130 @@
+.dd-container * {
+  box-sizing: border-box;
+}
+/* LAYOUT */
+.dd-container {
+  display: flex;
+  height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+/* SIDEBAR */
+.dd-sidebar {
+  width: 250px;
+  background: linear-gradient(180deg, #111827, #1f2937);
+  color: white;
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+}
+.dd-logo {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+/* NAV */
+.dd-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.dd-sidebar a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 15px;
+}
+.dd-sidebar a i {
+  font-size: 18px;
+}
+.dd-sidebar a:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+.dd-sidebar a.active {
+  background: #3b82f6;
+  color: white;
+}
+/* MAIN */
+.dd-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #f8fafc;
+}
+/* HEADER */
+.dd-header {
+  height: 75px;
+  background: white;
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+.dd-header-left h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+.dd-header-left p {
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+/* USER */
+.dd-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+.avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #3b82f6;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* CONTENT */
+.dd-content {
+  padding: 25px;
+  overflow-y: auto;
+}
+/* CARDS (for dashboard page) */
+.dd-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.dd-card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+.dd-card:hover {
+  transform: translateY(-5px);
+}
+.dd-card span {
+  display: block;
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+/* SECTION */
+.dd-section {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}

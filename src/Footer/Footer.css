@@ -1,0 +1,97 @@
+/* MAIN FOOTER */
+.footer-main {
+  background: linear-gradient(135deg, #1abeb6, #111827);
+  color: #ffffff;
+  margin-top: 60px;
+  padding: 20px 0;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Container */
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* Sections */
+.footer-section {
+  padding: 0 16px;
+  min-width: fit-content;
+}
+
+/* Brand */
+.footer-brand {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+/* Text */
+.footer-text {
+  font-size: 12px;
+  opacity: 0.7;
+  margin: 2px 0;
+}
+
+/* Links */
+.footer-link {
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: #000000;
+}
+
+/* Divider */
+.footer-divider {
+  width: 1px;
+  height: 60px;
+  background: linear-gradient(to bottom, transparent, #ffffff, transparent);
+  opacity: 0.2;
+}
+
+/* Subscribe */
+.subscribe-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Input */
+.footer-input {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  min-width: 160px;
+}
+
+/* Button */
+.subscribe-btn {
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  color: white;
+  transition: 0.3s;
+}
+
+.subscribe-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.3);
+}
+
+/* Bottom bar */
+.footer-bottom {
+  background: #020617;
+  color: #29d4be;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+}

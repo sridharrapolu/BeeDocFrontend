@@ -1,0 +1,110 @@
+/* ===== HARD CSS PROTECTION ===== */
+.uih2-container button {
+  width: auto !important;
+  display: inline-flex !important;
+}
+
+/* ===== CONTAINER ===== */
+.uih2-container {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #5c80d4, #1e293b);
+  color: #fff;
+}
+
+/* TITLE */
+.uih2-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.uih2-title span {
+  color: #0fd15a;
+}
+
+/* ===== 2x2 GRID ===== */
+.uih2-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+
+  width: 100%;
+  padding: 0 60px; /* adds breathing space */
+}
+
+/* CARD */
+.uih2-card {
+  background: rgba(156, 154, 154, 0.788);
+  border-radius: 14px;
+  overflow: hidden;
+  backdrop-filter: blur(8px);
+  transition: 0.3s ease;
+}
+
+.uih2-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+/* IMAGE */
+.uih2-image {
+  height: 150px;
+  overflow: hidden;
+}
+
+.uih2-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* BODY */
+.uih2-body {
+  padding: 15px;
+  text-align: center;
+}
+
+/* LOGO */
+.uih2-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-top: -30px;
+  border: 3px solid #0f172a;
+  background: #fff;
+}
+
+/* NAME */
+.uih2-body h3 {
+  margin-top: 8px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* ADDRESS */
+.uih2-address {
+  font-size: 13px;
+  color: #ffffff;
+  margin-top: 4px;
+}
+
+/* DESCRIPTION */
+.uih2-desc {
+  font-size: 12.5px;
+  color: #fbfdff;
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .uih2-grid {
+    grid-template-columns: 1fr; /* stack on mobile */
+  }
+
+  .uih2-title {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,116 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 90px 8%;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* LEFT SIDE */
+.about-left {
+  flex: 1;
+  max-width: 500px;
+}
+
+.tag {
+  font-size: 14px;
+  color: #00a8cc;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.about-left h2 {
+  font-size: 40px;
+  margin: 10px 0;
+  color: #0b3c5d;
+}
+
+.about-left h2 span {
+  color: #00a8cc;
+}
+
+.line {
+  width: 60px;
+  height: 4px;
+  background: #00a8cc;
+  margin: 15px 0 25px;
+  border-radius: 2px;
+}
+
+.about-left p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* BUTTON */
+.btn {
+  margin-top: 10px;
+  padding: 10px 22px;
+  border: none;
+  background: #00a8cc;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #007ea7;
+}
+
+/* RIGHT SIDE */
+.about-right {
+  flex: 1;
+  position: relative;
+  height: 380px;
+}
+
+/* BACK IMAGE */
+.back {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.6s ease;
+}
+
+/* FRONT IMAGE (overlap bottom-right) */
+.front {
+  width: 60%;
+  height: 65%;
+  object-fit: cover;
+  border-radius: 16px;
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transition: all 2s ease;
+}
+
+/* ANIMATION */
+.back-anim {
+  transform: scale(0.95);
+  opacity: 0.7;
+}
+
+.front-anim {
+  transform: translateX(40px) translateY(20px) scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .about-right {
+    width: 100%;
+  }
+}
