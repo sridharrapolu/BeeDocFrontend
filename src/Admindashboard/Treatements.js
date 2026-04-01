@@ -157,7 +157,7 @@ const Treatements = () => {
                 className="form-control"
               />
 
-              {preview && <img src={preview} className="trt-preview" />}
+              {preview && <img src={preview} alt="preview" className="trt-preview" />}
             </div>
 
             <div className="modal-footer">
@@ -202,7 +202,7 @@ const Treatements = () => {
                 className="form-control"
               />
 
-              {editPreview && <img src={editPreview} className="trt-preview" />}
+              {editPreview && <img src={editPreview} alt="preview" className="trt-preview" />}
             </div>
 
             <div className="modal-footer">
